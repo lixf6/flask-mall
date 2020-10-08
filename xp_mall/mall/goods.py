@@ -20,6 +20,7 @@ def index():
     pagination = Goods.query.order_by(Goods.create_time.desc()).paginate(page, per_page=per_page)
     goods_list = pagination.items
     categories = GoodsCategory.query.order_by(GoodsCategory.id).first()
+
     return render_template("mall/index.html", goods_list=goods_list)
 
 

@@ -3,7 +3,7 @@
 import logging
 import os
 import re
-from logging.handlers import  RotatingFileHandler
+from logging.handlers import RotatingFileHandler
 
 import click
 from flask import Flask, request, \
@@ -21,7 +21,7 @@ from xp_mall.member import member_module
 from xp_mall.models.category import GoodsCategory
 from xp_mall.models.member import Guest
 
-from xp_mall.extensions import  db, login_manager, csrf, ckeditor, moment, toolbar, migrate
+from xp_mall.extensions import db, login_manager, csrf, ckeditor, moment, toolbar, migrate
 from xp_mall.extensions import whooshee, dropzone, alipay, wxpay
 from xp_mall.settings import config
 from xp_mall.login_manage import AuthManage
@@ -209,5 +209,5 @@ def register_request_handlers(app):
 
 
 if __name__=="__main__":
-   app =  create_app("development")
+   app = create_app("development")
    app.run(host="0.0.0.0", port=5000, debug=True)

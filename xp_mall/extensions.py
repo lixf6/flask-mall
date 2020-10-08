@@ -13,9 +13,9 @@ from flask_dropzone import Dropzone
 from pay.alipay.create_pay import Alipay
 from pay.wxpay.create_pay import Wxpay
 
-db            = SQLAlchemy()
+db = SQLAlchemy()
 login_manager = LoginManager()
-csrf     = CSRFProtect()
+csrf = CSRFProtect()
 ckeditor = CKEditor()
 moment = Moment()
 toolbar = DebugToolbarExtension()
